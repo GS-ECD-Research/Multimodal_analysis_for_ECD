@@ -1,5 +1,6 @@
 import numpy as np
 import sys
+import os
 import torch
 import torch.nn.functional as F
 from config import Config
@@ -51,6 +52,8 @@ class Trainer(Config):
             val_acc, _, _, _ = self.valid(model, graph_feats, adjs, true_label, val_idx)
             if epoch == 492:
                 print("val_acc:", val_acc)
+                if not os.path.exists("./ckpt"):
+                    os.makedirs("./ckpt")
                 torch.save(model, self.ckpt_path)
             else:
                 print("val_acc:", val_acc) 
