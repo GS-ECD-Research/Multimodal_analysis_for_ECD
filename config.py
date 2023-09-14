@@ -25,8 +25,8 @@ class Config(object):
         self.USE_EDGE_LOSS = False
         self.WEIGHT = [1.0, 1.0, 1.0, 1.0, 1.0]
         self.USE_FOCAL_LOSS = True
-        self.data_path = "./ECD-Data_pan_cancer_paper.csv"
-        self.meta_data_path = "./New Metadata for pan-cancer paper.xlsx"
+        self.data_path = "" # path to the .csv data
+        self.meta_data_path = "" # path to the .xlsx metadata file
         self.sheet_name = "Metadata clean FULL"
         self.ckpt_path = "./ckpt/best_ckpt.pt"
     
