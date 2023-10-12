@@ -49,10 +49,9 @@ class Dataset(Config):
         graph_data = np.concatenate((train_data_array, test_data_array), axis=0)
         train_idx_ori = np.arange(len(train_data_array))
         test_idx = np.arange(len(test_data_array)) + len(train_data_array)
-        add_id = np.concatenate((test_idx[-89:-84], test_idx[110:120], test_idx[67:71], test_idx[-12:]))
 
         #####
-        train_idx = np.concatenate((train_idx_ori[:146], train_idx_ori[156:262-7], train_idx_ori[262:329-4], train_idx_ori[329:406-4], train_idx_ori[406:499-5], add_id))
+        train_idx = np.concatenate((train_idx_ori[:146], train_idx_ori[156:262-7], train_idx_ori[262:329-4], train_idx_ori[329:406-4], train_idx_ori[406:499-5]))
         val_idx = np.concatenate((train_idx_ori[146:156], train_idx_ori[255:262], train_idx_ori[325:329], train_idx_ori[402:406], train_idx_ori[494:]))
         #####
 
