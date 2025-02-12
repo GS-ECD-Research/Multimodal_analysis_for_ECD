@@ -18,7 +18,7 @@ The repository includes:
 
 ## Dataset
 The dataset for the TOO task are included in the repository by two files:
-- Data used for training: ECD-Data_pan_cancer_paper.csv
+- Data used for training: ECD-Data_pan_cancer_paper.csv ([link](https://drive.google.com/file/d/1aR7uNwK0PRInQifIuFkI3zzdO_AaogUo/view?usp=sharing))
 - Metadata of data: New Metadata for pan-cancer paper.xlsx
 
 ## Training:
